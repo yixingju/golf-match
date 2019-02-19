@@ -11,7 +11,7 @@ import java.util.List;
 @Component
 public class BrandServiceImpl implements BrandService {
     @Reference(version = "1.0.1")
-    private RpcBrandService rpcBrandService;
+    RpcBrandService rpcBrandService;
 
     @Override
     public List<Brand> findByPage() {
